@@ -1,0 +1,9 @@
+#prompt for input
+gross=float(input("Enter the gross income: "))
+dependent=int(input("Enter the number of dependents: "))
+#Calculate taxable income
+total=gross-10000-(dependent*3000)
+#Find the tax amount
+tax=(total*20)/100
+#Print result
+print("The income tax is $"+str(tax))
